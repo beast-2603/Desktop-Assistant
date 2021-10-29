@@ -84,7 +84,7 @@ def beginner():
     with sr.Microphone() as source:
         print("Say the command to activate....")
         r.pause_threshold = 1
-        r.energy_threshold = 300
+        r.energy_threshold = 400
         audio = r.listen(source)
 
     try:
